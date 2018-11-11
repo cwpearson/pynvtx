@@ -19,3 +19,7 @@ ADD https://raw.githubusercontent.com/cwpearson/pynvtx/pynvtx.py /opt/openvprof/
 RUN chmod ugo+rx /opt/openvprof/pynvtx.py
 ENV PATH /opt/openvprof:$PATH
 ```
+
+# Acknowedgement
+
+This script was initially developed while I was an intern at IBM T. J. Watson Research during fall 2018.
