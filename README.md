@@ -5,7 +5,22 @@ Add python source code annotations to nvprof trace file
 
     nvprof pynvtx.py my-script.py
   
-    pynvtx --help
+`pynvtx.py` will execute `my-script.py`, but register a callback function with Python's `setprofile` to add annotations to the nvprof trace file.  
+  
+    $ pynvtx --help
+    usage: pynvtx.py [-h] [--depth DEPTH] [--debug] [--verbose]
+                     commands [commands ...]
+
+    Add Nvidia Tools Extensions ranges to python functions
+
+    positional arguments:
+      commands       commands help
+
+    optional arguments:
+      -h, --help     show this help message and exit
+      --depth DEPTH  only push ranges to this stack depth
+      --debug        print debug messages
+      --verbose      print verbose messages
 
 ## Docker
 
